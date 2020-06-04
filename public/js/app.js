@@ -22,7 +22,6 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = `Place: ${weatherData.placeName}`;
                 messageTwo.textContent = `Weather short description: ${weatherData.weatherDescriptions}`;
                 messageThree.textContent = `Current temperature is ${weatherData.temperature} degrees.`;
-                console.log(weatherData)
             }
         })
     })

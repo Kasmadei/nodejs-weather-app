@@ -6,7 +6,6 @@ const ACCESS_KEY = '2704c7df8cfc302b10c4f6e89b2b973c'
 const getWeatherForecast = ( longitude, latitude, placeName, callback) => {
     const url = `${DEFAULT_URL}/current?access_key=${ACCESS_KEY}&query=${latitude},${longitude}`
     request({ url, json: true }, (error, response, body) => {
-        console.log(body)
         if (error) {
             callback('Unable to connect to weather service.', undefined)
         } else if (body.error) {
