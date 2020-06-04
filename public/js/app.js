@@ -19,9 +19,9 @@ weatherForm.addEventListener('submit', (e) => {
                 return;
             } else {
                 const weatherData = { ...res.data }
-                messageOne.textContent = `${weatherData.placeName}`;
-                messageTwo.textContent = `${weatherData.weatherDescriptions}`;
-                messageThree.textContent = `Temperature is ${weatherData.temperature} degrees.`;
+                messageOne.textContent = `Place: ${weatherData.placeName}`;
+                messageTwo.textContent = `Weather short description ${weatherData.weatherDescriptions}`;
+                messageThree.textContent = `Current temperature is ${weatherData.temperature} degrees.`;
                 console.log(weatherData)
             }
         })
