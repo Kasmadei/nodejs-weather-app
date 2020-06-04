@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageThree.textContent = '';
     const location = search.value;
 
-    fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
+    fetch(`/weather?address=${location}`).then(response => {
         response.json().then(res => {
             if (res.responseStatus !== 200) {
                 messageOne.textContent = 'Unable to find location. Try another search.';

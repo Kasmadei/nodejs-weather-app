@@ -50,6 +50,11 @@ button {
     padding: 8px
 }
 
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .main-content {
     flex-grow: 1;
 }
